@@ -2,7 +2,7 @@ package com.study.guestBook.entity;
 
 import lombok.Data;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 public class GuestBookEntity {
@@ -10,7 +10,7 @@ public class GuestBookEntity {
         super();
     }
 
-    public GuestBookEntity(int id, String title, String content, String writer, LocalDate register_date) {
+    public GuestBookEntity(int id, String title, String content, String writer, LocalDateTime register_date) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -22,5 +22,5 @@ public class GuestBookEntity {
     private String title;
     private String content;
     private String writer;
-    private LocalDate register_date;
+    private LocalDateTime register_date;
 }
